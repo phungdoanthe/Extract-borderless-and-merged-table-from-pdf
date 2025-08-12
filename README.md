@@ -66,13 +66,13 @@ pip install -r requirements.txt
 ### 4. Set Up Environment Variables
 Create a .env file with your database configuration:
 
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME_ERS=ers_database
-DB_NAME_LWS=lws_database
-DB_NAME_PTC=ptc_database
-DB_NAME_PDF=pdf_database
-DB_USER=your_username
+DB_HOST=localhost, 
+DB_PORT=5432, 
+DB_NAME_ERS=ers_database, 
+DB_NAME_LWS=lws_database, 
+DB_NAME_PTC=ptc_database, 
+DB_NAME_PDF=pdf_database, 
+DB_USER=your_username, 
 DB_PASSWORD=your_password
 
 ### Usage
