@@ -1,0 +1,15 @@
+## **requirements.txt**
+pandas
+numpy
+opencv-python
+Pillow
+pdfplumber
+camelot-py[cv]
+ftfy
+nltk
+english-words
+psycopg2-binary
+SQLAlchemy
+python-dotenv
+tabulate
+scipy
