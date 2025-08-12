@@ -37,11 +37,17 @@ It is designed for workflows where raw PDF files are ingested into a database, a
 ## Directory Structure
 .
 ├── compare_image.py # Image extraction and comparison
+
 ├── compare_table.py # Table extraction and comparison
+
 ├── compare_texts.py # Text and TOC comparison
+
 ├── database_management.py # PostgreSQL operations
+
 ├── extract_normalize_tables.py # Table cleaning & normalization
+
 ├── pdf_management.py # PDF parsing utilities
+
 ├── processing_lines.py # PDF line detection for table structure
 
 
