@@ -72,25 +72,17 @@ Create a .env file with your database configuration:
 ### Usage
  Here’s a quick example of comparing two PDFs for image differences:
 
- from compare_image import convert_img_name
-
- pdf_list = ["v1_document.pdf", "v2_document.pdf"]
+<from compare_image import convert_img_name>
+<pdf_list = ["v1_document.pdf", "v2_document.pdf"]>
+<conversion_map, images = convert_img_name(pdf_list)>
+<print(conversion_map)>
  
- conversion_map, images = convert_img_name(pdf_list) 
- 
- print(conversion_map) 
- 
- Extracting and comparing tables: 
-
- from compare_table import extract_tables, compare_tables
-
- tables_v1 = extract_tables("v1_document.pdf")
- 
- tables_v2 = extract_tables("v2_document.pdf")
- 
- diff_table = compare_tables([tables_v1, tables_v2])
- 
- print(diff_table ) 
+ - Extracting and comparing tables:
+<from compare_table import extract_tables, compare_tables>
+<tables_v1 = extract_tables("v1_document.pdf")>
+<tables_v2 = extract_tables("v2_document.pdf")>
+<diff_table = compare_tables([tables_v1, tables_v2])>
+<print(diff_table )> 
 
 ### Dependencies
 See requirements.txt for a full list of dependencies.
