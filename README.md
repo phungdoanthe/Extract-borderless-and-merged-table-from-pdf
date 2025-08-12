@@ -58,7 +58,7 @@ It is designed for workflows where raw PDF files are ingested into a database, a
 - pip install -r requirements.txt
 
 ### 4. Set Up Environment Variables
-- Create a .env file with your database configuration:
+Create a .env file with your database configuration:
 
 - DB_HOST=localhost, 
 - DB_PORT=5432, 
@@ -70,21 +70,21 @@ It is designed for workflows where raw PDF files are ingested into a database, a
 - DB_PASSWORD=your_password
 
 ### Usage
-- Here’s a quick example of comparing two PDFs for image differences:
+ Here’s a quick example of comparing two PDFs for image differences:
 
-- from compare_image import convert_img_name
--
-- pdf_list = ["v1_document.pdf", "v2_document.pdf"]
-- conversion_map, images = convert_img_name(pdf_list)
-- print(conversion_map)
-- Extracting and comparing tables:
+ from compare_image import convert_img_name
 
-- from compare_table import extract_tables, compare_tables
+ pdf_list = ["v1_document.pdf", "v2_document.pdf"]
+ conversion_map, images = convert_img_name(pdf_list)
+ print(conversion_map)
+ Extracting and comparing tables:
 
-- tables_v1 = extract_tables("v1_document.pdf")
-tables_v2 = extract_tables("v2_document.pdf")
-diff_table = compare_tables([tables_v1, tables_v2])
-print(diff_table ) 
+ from compare_table import extract_tables, compare_tables
 
-###Dependencies
+ tables_v1 = extract_tables("v1_document.pdf")
+ tables_v2 = extract_tables("v2_document.pdf")
+ diff_table = compare_tables([tables_v1, tables_v2])
+ print(diff_table ) 
+
+### Dependencies
 See requirements.txt for a full list of dependencies.
